@@ -43,7 +43,7 @@ export default function Products() {
   useEffect(() => {
     async function fetchCategory() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/category"
+        "https://algouni-students.duckdns.org/api/category"
       );
       const data = await response.json();
       setCategories(data);
@@ -53,7 +53,7 @@ export default function Products() {
   useEffect(() => {
     async function fetchProducts() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/product"
+        "https://algouni-students.duckdns.org/api/product"
       );
       const data = await response.json();
       setProducts(data);
@@ -91,7 +91,7 @@ export default function Products() {
     formData.append("description", addProduct.description);
 
     const responce = await fetch(
-      "https://ecommerce-collab.duckdns.org/api/product",
+      "https://algouni-students.duckdns.org/api/product",
       {
         method: "POST",
         headers: {
@@ -117,7 +117,7 @@ export default function Products() {
 
   async function deleteProduct(productId: number) {
     const responce = await fetch(
-      `https://ecommerce-collab.duckdns.org/api/product/${productId}`,
+      `https://algouni-students.duckdns.org/api/product/${productId}`,
       {
         method: "DELETE",
         headers: {

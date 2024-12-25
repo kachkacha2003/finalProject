@@ -31,7 +31,7 @@ export default function SingleCategory() {
   useEffect(() => {
     async function fetchSingleCategories(id: number | undefined) {
       const response = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/product?category=${id}`
+        `https://algouni-students.duckdns.org/api/product?category=${id}`
       );
       if (response.ok) {
         const data = await response.json();

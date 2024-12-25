@@ -28,7 +28,7 @@ export default function SignUp() {
       formData.append(key, value);
     });
     const res = await fetch(
-      "https://ecommerce-collab.duckdns.org/auth/signup",
+      "https://algouni-students.duckdns.org/auth/signup",
       {
         method: "POST",
         body: formData,

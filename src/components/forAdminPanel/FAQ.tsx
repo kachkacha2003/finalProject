@@ -14,7 +14,7 @@ export default function FAQ() {
   useEffect(() => {
     async function fetchFaq() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/faq"
+        "https://algouni-students.duckdns.org/api/faq"
       );
       const data = await response.json();
       setFaqs(data);
@@ -34,7 +34,7 @@ export default function FAQ() {
   async function addNewFaq(event: any) {
     event.preventDefault();
     const responce = await fetch(
-      "https://ecommerce-collab.duckdns.org/api/faq",
+      "https://algouni-students.duckdns.org/api/faq",
       {
         method: "POST",
         headers: {
@@ -50,7 +50,7 @@ export default function FAQ() {
 
   async function deleteFaq(faqId: any) {
     const responce = await fetch(
-      `https://ecommerce-collab.duckdns.org/api/faq/${faqId}`,
+      `https://algouni-students.duckdns.org/api/faq/${faqId}`,
       {
         method: "DELETE",
       }

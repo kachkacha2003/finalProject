@@ -52,7 +52,7 @@ export default function MyAddress() {
       setIsAddressList(!isAddressList);
       setList(true);
       const responce = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/address/${address.id}`,
+        `https://algouni-students.duckdns.org/api/address/${address.id}`,
         {
           method: "PUT",
           headers: {
@@ -84,7 +84,7 @@ export default function MyAddress() {
         token = JSON.parse(token as string);
 
         const response = await fetch(
-          "https://ecommerce-collab.duckdns.org/api/address",
+          "https://algouni-students.duckdns.org/api/address",
           {
             headers: {
               Authorization: `Bearer ${

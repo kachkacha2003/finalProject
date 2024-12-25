@@ -14,7 +14,7 @@ export default function SelectingAPlan() {
   useEffect(() => {
     async function fetchSubscriptions() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/subscription"
+        "https://algouni-students.duckdns.org/api/subscription"
       );
       const data = await response.json();
       setSubscriptions(data);

@@ -21,7 +21,7 @@ export default function Subscriptions() {
   useEffect(() => {
     async function fetchSubscriptions() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/subscription"
+        "https://algouni-students.duckdns.org/api/subscription"
       );
       const data = await response.json();
       setSubscriptions(data);
@@ -59,7 +59,7 @@ export default function Subscriptions() {
     formData.append("saveUp", addSubscription.saveUp.toString());
 
     const response = await fetch(
-      "https://ecommerce-collab.duckdns.org/api/subscription",
+      "https://algouni-students.duckdns.org/api/subscription",
       {
         method: "POST",
         headers: {},
@@ -83,7 +83,7 @@ export default function Subscriptions() {
 
   async function deleteSubscr(subscrId: any) {
     const responce = await fetch(
-      `https://ecommerce-collab.duckdns.org/api/subscription/${subscrId}`,
+      `https://algouni-students.duckdns.org/api/subscription/${subscrId}`,
       {
         method: "DELETE",
       }

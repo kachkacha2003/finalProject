@@ -19,7 +19,7 @@ export default function AllCategory() {
       if (users.id === 0 && token) {
         token = JSON.parse(token as string);
         const res = await fetch(
-          "https://ecommerce-collab.duckdns.org/auth/users",
+          "https://algouni-students.duckdns.org/auth/users",
           {
             method: "GET",
             headers: {

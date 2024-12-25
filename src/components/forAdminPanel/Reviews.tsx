@@ -19,7 +19,7 @@ export default function Reviews() {
       if (token) {
         token = JSON.parse(token as string);
         const response = await fetch(
-          `https://ecommerce-collab.duckdns.org/api/reviews/${reviewsId}`,
+          `https://algouni-students.duckdns.org/api/reviews/${reviewsId}`,
           {
             method: "GET",
             headers: {
@@ -46,7 +46,7 @@ export default function Reviews() {
     if (token) {
       token = JSON.parse(token as string);
       const responce = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/reviews/${reviewId}`,
+        `https://algouni-students.duckdns.org/api/reviews/${reviewId}`,
         {
           method: "DELETE",
           headers: {

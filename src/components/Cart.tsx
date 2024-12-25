@@ -71,7 +71,7 @@ export default function Cart() {
         const cart = localStorage.getItem("cart");
         if (!cart) {
           const res = await fetch(
-            "https://ecommerce-collab.duckdns.org/api/cart",
+            "https://algouni-students.duckdns.org/api/cart",
             {
               method: "GET",
               headers: {
@@ -103,7 +103,7 @@ export default function Cart() {
     if (token) {
       token = JSON.parse(token);
       const res = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/cart/${id}`,
+        `https://algouni-students.duckdns.org/api/cart/${id}`,
         {
           method: "DELETE",
           headers: {

@@ -9,7 +9,7 @@ export default function Faq() {
   useEffect(() => {
     async function fetchFaq() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/faq"
+        "https://algouni-students.duckdns.org/api/faq"
       );
       const data = await response.json();
       setFaqs(data);

@@ -27,7 +27,7 @@ export default function SingleProduct() {
   useEffect(() => {
     async function fetchSingleProduct(id: string | undefined) {
       const response = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/product/${id}`
+        `https://algouni-students.duckdns.org/api/product/${id}`
       );
       const data = await response.json();
       setSingleProductState(data);

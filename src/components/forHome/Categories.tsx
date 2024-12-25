@@ -11,7 +11,7 @@ export default function Categories() {
   useEffect(() => {
     async function fetchCategories() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/category"
+        "https://algouni-students.duckdns.org/api/category"
       );
       const data = await response.json();
       setCategories(data);

@@ -53,7 +53,7 @@ export default function Checkout() {
           InputsData.items = orderItems;
           InputsData.total = count;
           const res = await fetch(
-            "https://ecommerce-collab.duckdns.org/api/order",
+            "https://algouni-students.duckdns.org/api/order",
             {
               method: "POST",
               headers: {

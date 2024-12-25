@@ -19,7 +19,7 @@ export default function PriceOptions({
     if (token) {
       token = JSON.parse(token as string);
       const res = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/cart-item",
+        "https://algouni-students.duckdns.org/api/cart-item",
         {
           method: "POST",
           headers: {

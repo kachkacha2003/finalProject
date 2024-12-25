@@ -13,7 +13,7 @@ export default function SingleCategory() {
   useEffect(() => {
     async function foo(id: string | null) {
       const res = await fetch(
-        `https://ecommerce-collab.duckdns.org/api/product?name=${id}`
+        `https://algouni-students.duckdns.org/api/product?name=${id}`
       );
 
       if (res.ok) {

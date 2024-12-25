@@ -26,7 +26,7 @@ export default function Users() {
       if (token) {
         token = JSON.parse(token as string);
         const response = await fetch(
-          "https://ecommerce-collab.duckdns.org/auth/signup",
+          "https://algouni-students.duckdns.org/auth/signup",
           {
             method: "GET",
             headers: {
@@ -52,7 +52,7 @@ export default function Users() {
     if (token) {
       token = JSON.parse(token as string);
       const responce = await fetch(
-        `https://ecommerce-collab.duckdns.org/auth/signup/${userId}`,
+        `https://algouni-students.duckdns.org/auth/signup/${userId}`,
         {
           method: "DELETE",
           headers: {

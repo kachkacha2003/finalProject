@@ -15,7 +15,7 @@ export default function Categories() {
   useEffect(() => {
     async function fetchCategories() {
       const response = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/category"
+        "https://algouni-students.duckdns.org/api/category"
       );
       const data = await response.json();
       setCategories(data);
@@ -53,7 +53,7 @@ export default function Categories() {
     formData.append("image", addCategory.image);
 
     const response = await fetch(
-      "https://ecommerce-collab.duckdns.org/api/category",
+      "https://algouni-students.duckdns.org/api/category",
       {
         method: "POST",
         headers: {
@@ -75,7 +75,7 @@ export default function Categories() {
 
   async function deleteCategory(categoriesId: number) {
     const responce = await fetch(
-      `https://ecommerce-collab.duckdns.org/api/category/${categoriesId}`,
+      `https://algouni-students.duckdns.org/api/category/${categoriesId}`,
       {
         method: "DELETE",
         headers: {

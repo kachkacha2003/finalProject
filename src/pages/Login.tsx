@@ -18,9 +18,8 @@ export default function Login() {
   };
 
   async function loginUser(userinfo: { username: string; password: string }) {
-
     const res = await fetch(
-      "https://ecommerce-collab.duckdns.org/auth/login/",
+      "https://algouni-students.duckdns.org/auth/login/",
       {
         method: "POST",
         headers: {

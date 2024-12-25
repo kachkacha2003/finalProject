@@ -26,7 +26,7 @@ export default function MySetting() {
       if (token) {
         token = JSON.parse(token as string);
         const res = await fetch(
-          "https://ecommerce-collab.duckdns.org/auth/users",
+          "https://algouni-students.duckdns.org/auth/users",
           {
             method: "GET",
             headers: {
@@ -74,7 +74,7 @@ export default function MySetting() {
       token = JSON.parse(token as string);
 
       const responce = await fetch(
-        "https://ecommerce-collab.duckdns.org/api/reviews",
+        "https://algouni-students.duckdns.org/api/reviews",
 
         {
           method: "POST",

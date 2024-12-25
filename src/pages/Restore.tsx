@@ -13,7 +13,7 @@ export default function Restore() {
   async function userCheck() {
     console.log(username);
     const res = await fetch(
-      "https://ecommerce-collab.duckdns.org/auth/recover",
+      "https://algouni-students.duckdns.org/auth/recover",
       {
         method: "POST",
         headers: {
@@ -30,7 +30,7 @@ export default function Restore() {
   }
   async function recoveryPassword() {
     const res = await fetch(
-      "https://ecommerce-collab.duckdns.org/auth/recover/validate_code",
+      "https://algouni-students.duckdns.org/auth/recover/validate_code",
       {
         method: "POST",
         headers: {
@@ -46,7 +46,7 @@ export default function Restore() {
   }
   async function changePassword() {
     const res = await fetch(
-      "https://ecommerce-collab.duckdns.org/auth/recover/change_password",
+      "https://algouni-students.duckdns.org/auth/recover/change_password",
       {
         method: "POST",
         headers: {
